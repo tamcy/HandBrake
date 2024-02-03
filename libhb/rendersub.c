@@ -484,14 +484,14 @@ static hb_buffer_t * ScaleSubtitle(hb_filter_private_t *pv,
         // The video may have been cropped.  This will make xfactor != yfactor
         // even though video and subtitles are the same PAR.  So use the
         // larger of as the scale factor.
-        if (xfactor > yfactor)
+        /*if (xfactor > yfactor)
         {
             yfactor = xfactor;
         }
         else
         {
             xfactor = yfactor;
-        }
+        }*/
     }
     if (ABS(xfactor - 1) > 0.01 || ABS(yfactor - 1) > 0.01)
     {
